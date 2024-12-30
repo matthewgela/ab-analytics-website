@@ -1,13 +1,13 @@
 # AB Analytics Website
 
-This is the official website for AB Analytics, showcasing our Patient Health Data Management System (PHDMS).
+A modern, responsive website for AB Analytics' Patient Health Data Management System (PHDMS).
 
 ## Features
 
-- Modern, responsive design
-- Interactive patient dashboard mockup
-- Company information and mission statement
-- Contact information
+- Modern, clean design with responsive layout
+- Interactive UI mockups demonstrating the PHDMS interface
+- Comprehensive product showcase
+- Mobile-first approach
 
 ## Development
 
@@ -16,6 +16,8 @@ This is a static website built with:
 - CSS3
 - JavaScript
 - Font Awesome for icons
+
+Last updated: December 30, 2023
 
 ## Deployment
 
@@ -30,4 +32,4 @@ To run this site locally:
 
 ## License
 
-All rights reserved - AB Analytics
+All rights reserved. 2023 AB Analytics
