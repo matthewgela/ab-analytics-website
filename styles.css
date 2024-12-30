@@ -107,6 +107,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     padding: 6rem 5% 2rem;
     background: linear-gradient(135deg, var(--white) 0%, var(--light-blue) 100%);
+    gap: 2rem;
 }
 
 .hero-content {
@@ -125,51 +126,98 @@ h1, h2, h3, h4, h5, h6 {
     color: #666;
 }
 
+.product-features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.1rem;
+    color: var(--midnight-blue);
+}
+
+.feature i {
+    color: var(--gold);
+    font-size: 1.2rem;
+}
+
 .hero-cta {
     display: flex;
     gap: 1rem;
 }
 
-.hero-image {
-    position: relative;
-    height: 100%;
+.hero-showcase {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-.floating-cards {
-    position: relative;
-    width: 100%;
-    height: 400px;
+@media (max-width: 992px) {
+    .split-hero {
+        grid-template-columns: 1fr;
+        padding: 5rem 5% 2rem;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .product-features {
+        max-width: 500px;
+        margin: 2rem auto;
+        justify-content: center;
+    }
+
+    .feature {
+        justify-content: center;
+    }
+
+    .hero-cta {
+        justify-content: center;
+    }
+
+    .hero-showcase {
+        margin-top: 2rem;
+    }
 }
 
-.card-preview {
-    position: absolute;
-    padding: 2rem;
-    background: var(--white);
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
 
-.card-preview.patient {
-    top: 0;
-    left: 10%;
-    transform: rotate(-5deg);
-}
+    .hero-text {
+        font-size: 1rem;
+    }
 
-.card-preview.hospital {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-}
+    .product-features {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
 
-.card-preview.doctor {
-    bottom: 0;
-    right: 10%;
-    transform: rotate(5deg);
+    .feature {
+        font-size: 1rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-cta a {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* Solutions Section */
